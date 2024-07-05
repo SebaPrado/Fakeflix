@@ -1,7 +1,9 @@
 function NotFound() {
   return (
     <>
-      <div> Error 404 ,pagina no encontrada</div>
+    
+        <h2 className="error">Error 404 , not found. Try the real NETFLIX</h2>
+      
     </>
   );
 }

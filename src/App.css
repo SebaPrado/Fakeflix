@@ -215,3 +215,12 @@ body::before {
     text-align: center;
   }
 }
+/* ================  error ================= */
+
+.error{
+  text-align: center;
+  margin-top: 10rem;
+  color: white;
+  font-size:xx-large;
+  font-weight: 500;
+}

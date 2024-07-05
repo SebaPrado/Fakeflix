@@ -9,7 +9,7 @@ import Home from "./components/views/Home";
 import About from "./components/views/About";
 import SingleMovieView from "./components/views/SingleMovieView";
 import NotFound from "./components/NotFound";
-import MovieToPelicula from "./components/MovieToPelicula";
+// import MovieToPelicula from "./components/MovieToPelicula";
 import Search from "./components/views/Search";
 import Layout from "./components/Layout";
 
@@ -31,11 +31,10 @@ const router = createBrowserRouter([
         path: "pelicula/:id",
         element: <SingleMovieView />, //view
       },
-      {
-        path: "movie/:id",
-        element: <MovieToPelicula />, // Navigate ,me lleva  a vista Peli
-      },
-
+      // {
+      //   path: "movie/:id",
+      //   element: <MovieToPelicula />, // Navigate ,me lleva  a vista Peli
+      // },
       {
         path: "search",
         element: <Search />, // view
@@ -44,7 +43,6 @@ const router = createBrowserRouter([
         path: "contactenos",
         element: <Navigate replace to="/contacto" />, // Navigate , me lleva a Contacto
       },
-      
     ],
   },
   {

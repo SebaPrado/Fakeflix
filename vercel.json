@@ -1,0 +1,12 @@
+{
+    "build": {
+      "env": {
+        "NODE_ENV": "production"
+      },
+      "commands": {
+        "prebuild": "chmod +x node_modules/.bin/vite",
+        "build": "npm run build"
+      }
+    }
+  }
+  

@@ -1,17 +1,17 @@
 {
   "version": 2,
   "builds": [
-    { "src": "FAKEFLIX/src/main.jsx", "use": "@vercel/node" },
-    { "src": "FAKEFLIX/src/main.jsx", "use": "@vercel/static" }
+    { "src": "fakeflix/src/main.jsx", "use": "@vercel/node" },
+    { "src": "fakeflix/src/main.jsx", "use": "@vercel/static" }
   ],
   "routes": [
     {
       "src": "/src/css/(.*)",
-      "dest": "FAKEFLIX/src/App.css"
+      "dest": "fakeflix/src/App.css"
     },
     {
       "src": "/(.*)",
-      "dest": "FAKEFLIX/src/App.css"
+      "dest": "fakeflix/src/App.css"
     }
   ]
 }

@@ -73,9 +73,6 @@ body::before {
   color: rgb(210, 208, 193);
 }
 
-/* .navbar {
-  background-color: rgb(242, 228, 228);
-} */
 
 .inactiveNavbarButton {
   color: rgb(177, 34, 34);
@@ -116,13 +113,6 @@ body::before {
 }
 
 /* //===============================================================// */
-
-/* .pepe2 {
-  color: rgb(181, 184, 26);
-} */
-/* .presentation {
-  margin-top: 33rem;
-} */
 
 .presentation {
   margin-bottom: 17rem;

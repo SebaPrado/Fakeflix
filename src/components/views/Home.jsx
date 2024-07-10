@@ -3,6 +3,9 @@ import MoviesList from "../MoviesList";
 import Star from "../Star";
 import Presentation from "./Presentation";
 
+// npm i 
+// npm run dev
+
 function Home({ movie, pagina }) {
   const [rating, setRating] = useState(0);
 

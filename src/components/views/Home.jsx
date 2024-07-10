@@ -5,6 +5,7 @@ import Presentation from "./Presentation";
 
 // npm i 
 // npm run dev
+//VITE_apyKeyDeMiProyecto=2af77be589e4fbd4c0b22d025c79b270     
 
 function Home({ movie, pagina }) {
   const [rating, setRating] = useState(0);

@@ -8,7 +8,6 @@ function Presentation() {
           <h1 className="presentationSentence my-2 anton-regular">
             In F A K E F L I X, unlimited films...{" "}
           </h1>
-          <h2>Emiliano come pitoss </h2>
       <div className="my-4"></div>
 
         </div>

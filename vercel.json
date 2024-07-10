@@ -4,8 +4,9 @@
         "NODE_ENV": "production"
       },
       "commands": {
+        "install": "yarn install",
         "prebuild": "chmod +x node_modules/.bin/vite",
-        "build": "npm run build"
+        "build": "yarn build"
       }
     }
   }

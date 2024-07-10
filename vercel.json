@@ -1,8 +1,8 @@
 {
   "version": 2,
   "builds": [
-    { "src": "fakeflix/src/main.jsx", "use": "@vercel/node" },
-    { "src": "fakeflix/src/main.jsx", "use": "@vercel/static" }
+    { "src": "/src/main.jsx", "use": "@vercel/node" },
+    { "src": "/src/main.jsx", "use": "@vercel/static" }
   ],
   "routes": [
     {
@@ -11,7 +11,7 @@
     },
     {
       "src": "/(.*)",
-      "dest": "fakeflix/src/App.css"
+      "dest": "/src/App.css"
     }
   ]
 }

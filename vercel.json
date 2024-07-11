@@ -1,17 +1,19 @@
+
 {
   "version": 2,
   "builds": [
-    { "src": "/src/App.jsx", "use": "@vercel/node" },
-    { "src": "/public/**/*", "use": "@vercel/static" }
+    {
+      "src": "src/main.jsx",
+      "use": "@vercel/static-build",
+      "config": {
+        "distDir": "dist"
+      }
+    }
   ],
   "routes": [
     {
-      "src": "/css/(.*)",
-      "dest": "/public/css/$1"
-    },
-    {
       "src": "/(.*)",
-      "dest": "/src/App.jsx"
+      "dest": "/index.html"
     }
   ]
 }

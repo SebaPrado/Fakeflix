@@ -6,7 +6,7 @@ function About() {
       <div class="container mx-5">
         <div class="row">
           <div class="col-md-7 AboutSubDiv1 pe-5">
-            <p>
+            <p >
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore
               accusamus architecto cum ipsum quasi dolor, ducimus veniam, soluta
               fuga distinctio, blanditiis necessitatibus aliquam error atque

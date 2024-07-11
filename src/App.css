@@ -49,6 +49,7 @@ body::before {
   border-radius: 8%;
 }
 
+
 .increasedImage {
   transition: transform 0.4s ease-in-out;
 }
@@ -72,7 +73,6 @@ body::before {
 .starText {
   color: rgb(210, 208, 193);
 }
-
 
 .inactiveNavbarButton {
   color: rgb(177, 34, 34);
@@ -107,8 +107,8 @@ body::before {
   }
   100% {
     transform: translateY(0);
-    text-shadow: 0 0 10px rgba(255, 0, 0, 0.5), 0 0 20px rgba(160, 112, 112, 0.4),
-      0 0 30px rgba(255, 0, 0, 0.3);
+    text-shadow: 0 0 10px rgba(255, 0, 0, 0.5),
+      0 0 20px rgba(160, 112, 112, 0.4), 0 0 30px rgba(255, 0, 0, 0.3);
   }
 }
 
@@ -207,10 +207,57 @@ body::before {
 }
 /* ================  error ================= */
 
-.error{
+.error {
   text-align: center;
   margin-top: 10rem;
   color: white;
-  font-size:xx-large;
+  font-size: xx-large;
   font-weight: 500;
+}
+
+/*==================   Animista framework     ==================*/
+
+.flip-scale-2-hor-top {
+  -webkit-animation: flip-scale-2-hor-top 0.8s linear alternate-reverse both;
+  animation: flip-scale-2-hor-top 0.8s linear alternate-reverse both;
+}
+@-webkit-keyframes flip-scale-2-hor-top {
+  0% {
+    -webkit-transform: translateY(0) rotateX(0) scale(1);
+    transform: translateY(0) rotateX(0) scale(1);
+    -webkit-transform-origin: 50% 0;
+    transform-origin: 50% 0;
+  }
+  50% {
+    -webkit-transform: translateY(-50%) rotateX(-90deg) scale(2);
+    transform: translateY(-50%) rotateX(-90deg) scale(2);
+    -webkit-transform-origin: 50% 50%;
+    transform-origin: 50% 50%;
+  }
+  100% {
+    -webkit-transform: translateY(-100%) rotateX(-180deg) scale(1);
+    transform: translateY(-100%) rotateX(-180deg) scale(1);
+    -webkit-transform-origin: 50% 100%;
+    transform-origin: 50% 100%;
+  }
+}
+@keyframes flip-scale-2-hor-top {
+  0% {
+    -webkit-transform: translateY(0) rotateX(0) scale(1);
+    transform: translateY(0) rotateX(0) scale(1);
+    -webkit-transform-origin: 50% 0;
+    transform-origin: 50% 0;
+  }
+  50% {
+    -webkit-transform: translateY(-50%) rotateX(-90deg) scale(2);
+    transform: translateY(-50%) rotateX(-90deg) scale(2);
+    -webkit-transform-origin: 50% 50%;
+    transform-origin: 50% 50%;
+  }
+  100% {
+    -webkit-transform: translateY(-100%) rotateX(-180deg) scale(1);
+    transform: translateY(-100%) rotateX(-180deg) scale(1);
+    -webkit-transform-origin: 50% 100%;
+    transform-origin: 50% 100%;
+  }
 }

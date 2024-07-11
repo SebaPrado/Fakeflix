@@ -9,7 +9,7 @@ function Movie({ movie }) {
           <img
             src={`https://image.tmdb.org/t/p/w500${movie.poster_path}`}
             alt=""
-            className="imageOfMovieComponent w-100 object-fit-cover shadow-lg "
+            className="imageOfMovieComponent w-100 object-fit-cover shadow-lg  "
           />
         </Link>
       </div>

@@ -33,7 +33,9 @@ function About() {
             <div className="snap-section d-flex justify-content-center align-items-center about-lg-padding pb-5">
               <div className="techAndTools mx-auto">
                 <div className=" my-3">
-                  <h2 className="fw-bold mb-3 bold-text ">TECHNOLOGIES & TOOLS</h2>
+                  <h2 className="fw-bold mb-3 bold-text ">
+                    TECHNOLOGIES & TOOLS
+                  </h2>
                   <p>
                     This website was built using these technologies and tools:
                   </p>

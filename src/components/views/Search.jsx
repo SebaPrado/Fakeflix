@@ -36,7 +36,7 @@ function Search() {
       <div className="container">
         <div className="row justify-content-center my-4">
           <input
-            class="form-control search  "
+            class="form-control search flip-scale-2-hor-top  "
             type="search"
             placeholder="Search"
             aria-label="Search"

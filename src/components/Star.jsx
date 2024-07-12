@@ -12,7 +12,7 @@ function Star({ handleRating, rating }) {
           size={26}
         />
       </div>
-      <p className="starText anton-regular fs-6 mb-3 mt-3"> Movies rated {rating} stars or higher...  </p>
+      <p className="starText anton-regular fs-6 mb-3 mt-3"> Movies rated  <span className="bold-text">{rating}</span> stars or higher...  </p>
     </>
   );
 }

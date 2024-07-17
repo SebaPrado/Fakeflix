@@ -12,6 +12,7 @@ import NotFound from "./components/NotFound";
 // import MovieToPelicula from "./components/MovieToPelicula";
 import Search from "./components/views/Search";
 import Layout from "./components/Layout";
+import Modal from "./components/Modal";
 
 const router = createBrowserRouter([
   {
@@ -29,12 +30,9 @@ const router = createBrowserRouter([
       },
       {
         path: "pelicula/:id",
-        element: <SingleMovieView />, //view
+        element: <SingleMovieView/>, //view
       },
-      // {
-      //   path: "movie/:id",
-      //   element: <MovieToPelicula />, // Navigate ,me lleva  a vista Peli
-      // },
+      
       {
         path: "search",
         element: <Search />, // view

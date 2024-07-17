@@ -126,16 +126,11 @@ body::before {
   margin-bottom: 17rem;
 }
 
-
 .bordered-text {
   font-weight: bold;
-  text-shadow: 
-    -1px -1px 0 #c0aaaa,  
-     1px -1px 0 #b6a0a0,
-    -1px  1px 0 #af9999,
-     1px  1px 0 #b8a1a1;
+  text-shadow: -1px -1px 0 #c0aaaa, 1px -1px 0 #b6a0a0, -1px 1px 0 #af9999,
+    1px 1px 0 #b8a1a1;
 }
-
 
 /*  ==========================             About component                              ================== */
 
@@ -209,8 +204,8 @@ body::before {
 
 .movieTitle {
   margin-bottom: 2rem;
-  color: rgba(250, 248, 248, 0.665);
-  text-shadow: 2px 1px #5b2323;
+  color: rgba(250, 248, 248, 0.972);
+  text-shadow: 2px 1px #bbb7b761;
   letter-spacing: 0.5rem;
 }
 
@@ -220,8 +215,9 @@ body::before {
 }
 
 .uno {
-  padding-left: 38px;
-  color: rgba(250, 248, 248, 0.665);
+  margin-top: 2rem;
+  display: inline-block;
+  color: rgba(250, 248, 248, 0.961);
   max-width: 60%;
 }
 
@@ -232,12 +228,6 @@ body::before {
   .flexcontainerDescriptionAndImage {
     flex-direction: column;
     align-items: center;
-  }
-
-  .uno {
-    padding-left: 0;
-    text-wrap: pretty;
-    text-align: center;
   }
 }
 /* ================  error ================= */

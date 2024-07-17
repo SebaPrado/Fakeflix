@@ -1,7 +1,8 @@
-
 import { Link } from "react-router-dom";
 
 function Movie({ movie }) {
+ 
+
   return (
     <>
       <div className=" my-4 mx-3 increasedImage ">
@@ -12,6 +13,9 @@ function Movie({ movie }) {
             className="imageOfMovieComponent w-100 object-fit-cover shadow-lg  "
           />
         </Link>
+        <div>
+         
+        </div>
       </div>
     </>
   );

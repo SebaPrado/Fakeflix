@@ -22,17 +22,19 @@ function SingleMovieView() {
       <div className="text-center">
         <h3 className="movieTitle"> {peli.title}</h3>
       </div>
-      <div className="flexcontainerDescriptionAndImage">
-        <div className="uno">
-          <p>{peli.overview}</p>
-          <p>{peli.release_date}</p>
-        </div>
+      <div className="justify-content-center text-center">
         <div className="dos text-center">
           <img
             src={`https://image.tmdb.org/t/p/w500${peli.poster_path}`}
             alt="SingleMovieImage"
             className="SingleMovieImage"
           />
+        </div>
+        <div className="pepes">
+          <div className="uno ">
+            <p>{peli.overview}</p>
+            <p>{peli.release_date}</p>
+          </div>
         </div>
       </div>
     </>

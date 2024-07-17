@@ -41,7 +41,7 @@ function MoviesList({ rating, pagina }) {
             // .filter((movie) => movie.vote_average >= rating*2-2)
             .map((movie) => (
               <div className="col-lg-3 col-md-4 col-sm-12" key={movie.id}>
-                <Movie movie={movie} />
+                  <Movie movie={movie} />
               </div>
             ))}
         </div>

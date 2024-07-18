@@ -93,7 +93,7 @@ body::before {
 }
 .hover :hover {
   text-decoration: underline;
-  color: rgb(177, 34, 34) !important;
+  color: rgb(241, 236, 236) !important;
   transform: scale(1.02);
 }
 
@@ -101,9 +101,9 @@ body::before {
 
 .presentationSentence {
   font-weight: 400;
-  color: #ca1d1d;
+  color: #f1ecec;
   font-stretch: expanded;
-  filter: drop-shadow(0px 0px 23px rgb(231, 227, 227));
+  filter: drop-shadow(0px 0px 23px rgb(194, 39, 39));
   position: relative;
   animation: moveAndGlow 3s infinite alternate;
 }
@@ -128,8 +128,8 @@ body::before {
 
 .bordered-text {
   font-weight: bold;
-  text-shadow: -1px -1px 0 #c0aaaa, 1px -1px 0 #b6a0a0, -1px 1px 0 #af9999,
-    1px 1px 0 #b8a1a1;
+  text-shadow: -1px -1px 0 #0e0c0c, 1px -1px 0 #332c2c, -1px 1px 0 #080404,
+    1px 1px 0 #110808;
 }
 
 /*  ==========================             About component                              ================== */
@@ -141,7 +141,7 @@ body::before {
 .bold-text {
   font-weight: bold;
   padding: 4px;
-  letter-spacing: 1.4px;
+  letter-spacing: 1.8px;
   color: #f0e5e5;
 }
 

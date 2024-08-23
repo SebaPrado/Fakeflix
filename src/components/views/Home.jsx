@@ -90,7 +90,7 @@ function Home({ movie }) {
                     : "inactiveNavbarButton btn me-2"
                 }
               >
-                <p className="navbar-link">About me</p>
+                <p className="navbar-link">About</p>
               </NavLink>
             </span>
 

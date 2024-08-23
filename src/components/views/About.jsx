@@ -40,7 +40,7 @@ function About() {
                   : "inactiveNavbarButton btn me-2"
               }
             >
-              <p>About me</p>
+              <p>About</p>
             </NavLink>
           </span>
 

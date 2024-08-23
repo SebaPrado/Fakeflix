@@ -33,80 +33,84 @@ function Search() {
 
   return (
     <>
-      <nav className="p-3 position-relative" style={{ zIndex: 2 }}>
-        <div className="container-fluid d-block">
-          <span className="hover">
-            <NavLink
-              to="/"
-              className={({ isActive }) =>
-                isActive
-                  ? "text textColor fs-5 btn me-2"
-                  : "inactiveNavbarButton btn me-2"
-              }
-            >
-              <p>Home</p>
-            </NavLink>
-          </span>
+     <nav className="p-3 position-relative" style={{ zIndex: 2 }}>
+        
+     <div className="container-fluid d-block">
+       <span className="hover">
+         <NavLink
+           to="/"
+           className={({ isActive }) =>
+             isActive
+               ? "text textColor fs-5 btn me-2"
+               : "inactiveNavbarButton btn me-2"
+           }
+         >
+           <p>Home</p>
+         </NavLink>
+       </span>
 
-          <span className="hover">
-            <NavLink
-              to="/about-us"
-              className={({ isActive }) =>
-                isActive
-                  ? "text textColor fs-5 btn me-2"
-                  : "inactiveNavbarButton btn me-2"
-              }
-            >
-              <p>About</p>
-            </NavLink>
-          </span>
+       <span className="hover">
+         <NavLink
+           to="/about-us"
+           className={({ isActive }) =>
+             isActive
+               ? "text textColor fs-5 btn me-2"
+               : "inactiveNavbarButton btn me-2"
+           }
+         >
+           <p>About</p>
+         </NavLink>
+       </span>
 
-          <span className="hover">
-            <NavLink
-              to="/search"
-              className={({ isActive }) =>
-                isActive
-                  ? "text textColor fs-5 btn me-2"
-                  : "inactiveNavbarButton btn me-2"
-              }
-            >
-              <p>Search</p>
-            </NavLink>
-          </span>
-        </div>
-      </nav>
-      <div className=" text-center my-4 searcher searchBody">
-        <div className="container">
-          <div className="row justify-content-center my-4">
-            <input
-              class="form-control search  "
-              type="search"
-              placeholder="search for your favourite movie"
-              aria-label="Search"
-              value={inputValue}
-              onChange={(event) => setInputValue(event.target.value)}
-            ></input>
-          </div>
-        </div>
-
-        {console.log(inputValue)}
-        <div className="container">
-          <div className="row">
-            {filteredMoviesArray.map((movie) => (
-              <div className="col-3 my-2" key={movie.id}>
-                <NavLink to={`/pelicula/${movie.id}`}>
-                  <img
-                    src={`https://image.tmdb.org/t/p/w500${movie.poster_path}`}
-                    alt=""
-                    className=" w-100 object-fit-cover imageOfMovieComponent  increasedImage"
-                  />
-                </NavLink>
-              </div>
-            ))}
-          </div>
+       <span className="hover">
+         <NavLink
+           to="/search"
+           className={({ isActive }) =>
+             isActive
+               ? "text textColor fs-5 btn me-2"
+               : "inactiveNavbarButton btn me-2"
+           }
+         >
+           <p>Search</p>
+         </NavLink>
+       </span>
+     </div>
+   </nav>
+    <div className=" text-center my-4 searcher searchBody">
+      <div className="container">
+        <div className="row justify-content-center my-4">
+          <input
+            class="form-control search  "
+            type="search"
+            placeholder="search for your favourite movie"
+            aria-label="Search"
+            value={inputValue}
+            onChange={(event) => setInputValue(event.target.value)}
+          ></input>
         </div>
       </div>
+
+      {console.log(inputValue)}
+      <div className="container">
+        <div className="row">
+          {filteredMoviesArray.map((movie) => (
+            <div className="col-3 my-2" key={movie.id}>
+
+              <NavLink to={`/pelicula/${movie.id}`}>
+              <img
+                src={`https://image.tmdb.org/t/p/w500${movie.poster_path}`}
+                alt=""
+                className=" w-100 object-fit-cover imageOfMovieComponent  increasedImage"
+              />
+             </NavLink>
+
+            </div>
+          ))}
+        </div>
+      </div>
+    </div>
     </>
+
   );
 }
 

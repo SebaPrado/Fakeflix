@@ -8,7 +8,7 @@
     "build": "vite build",
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview",
-    "prebuild": "chmod +x node_modules/.bin/vite"
+    "postinstall": "chmod +x node_modules/.bin/vite"
   },
   "engines": {
     "npm": ">=7.0.0"

@@ -1,5 +1,5 @@
 {
-  "name": "react-9o-ejercicio",
+  "name": "fakeflix",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -10,29 +10,23 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "@headlessui/react": "^2.1.1",
-    "@heroicons/react": "^2.1.4",
-    "axios": "^1.6.7",
-    "bootstrap": "^5.3.3",
+    "axios": "^1.7.4",
     "react": "^18.2.0",
-    "react-bootstrap": "^2.10.1",
+    "react-bootstrap": "^2.10.4",
     "react-dom": "^18.2.0",
-    "react-icons": "^5.2.1",
+    "react-icons": "^5.3.0",
     "react-infinite-scroll-component": "^6.1.0",
-    "react-rating-stars-component": "^2.2.0",
-    "react-router-dom": "^6.22.2",
+    "react-router-dom": "^6.26.1",
     "react-simple-star-rating": "^5.1.7"
   },
   "devDependencies": {
-    "@types/react": "^18.2.56",
-    "@types/react-dom": "^18.2.19",
-    "@vitejs/plugin-react": "^4.2.1",
-    "eslint": "^8.56.0",
-    "eslint-plugin-react": "^7.33.2",
+    "@types/react": "^18.2.15",
+    "@types/react-dom": "^18.2.7",
+    "@vitejs/plugin-react": "^4.0.3",
+    "eslint": "^8.45.0",
+    "eslint-plugin-react": "^7.32.2",
     "eslint-plugin-react-hooks": "^4.6.0",
-    "eslint-plugin-react-refresh": "^0.4.5",
-    "tailwindcss": "^3.4.4",
-    "vite": "^5.1.4",
-    "yarn": "^1.22.22"
+    "eslint-plugin-react-refresh": "^0.4.3",
+    "vite": "^4.4.5"
   }
 }

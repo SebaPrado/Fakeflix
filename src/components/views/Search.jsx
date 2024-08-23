@@ -32,13 +32,57 @@ function Search() {
   const filteredMoviesArray = filteredMovie.results || [];
 
   return (
+    <>
+     <nav className="p-3 position-relative" style={{ zIndex: 2 }}>
+        
+     <div className="container-fluid d-block">
+       <span className="hover">
+         <NavLink
+           to="/"
+           className={({ isActive }) =>
+             isActive
+               ? "text textColor fs-5 btn me-2"
+               : "inactiveNavbarButton btn me-2"
+           }
+         >
+           <p>Home</p>
+         </NavLink>
+       </span>
+
+       <span className="hover">
+         <NavLink
+           to="/about-us"
+           className={({ isActive }) =>
+             isActive
+               ? "text textColor fs-5 btn me-2"
+               : "inactiveNavbarButton btn me-2"
+           }
+         >
+           <p>About me</p>
+         </NavLink>
+       </span>
+
+       <span className="hover">
+         <NavLink
+           to="/search"
+           className={({ isActive }) =>
+             isActive
+               ? "text textColor fs-5 btn me-2"
+               : "inactiveNavbarButton btn me-2"
+           }
+         >
+           <p>Search</p>
+         </NavLink>
+       </span>
+     </div>
+   </nav>
     <div className=" text-center my-4 searcher searchBody">
       <div className="container">
         <div className="row justify-content-center my-4">
           <input
-            class="form-control search flip-scale-2-hor-top  "
+            class="form-control search  "
             type="search"
-            placeholder="Search"
+            placeholder="search for your favourite movie"
             aria-label="Search"
             value={inputValue}
             onChange={(event) => setInputValue(event.target.value)}
@@ -65,6 +109,8 @@ function Search() {
         </div>
       </div>
     </div>
+    </>
+
   );
 }
 

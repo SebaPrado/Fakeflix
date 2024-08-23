@@ -7,12 +7,11 @@ import {
 
 import Home from "./components/views/Home";
 import About from "./components/views/About";
-import SingleMovieView from "./components/views/SingleMovieView";
+import SingleMovieModal from "./components/views/SingleMovieModal";
 import NotFound from "./components/NotFound";
-// import MovieToPelicula from "./components/MovieToPelicula";
 import Search from "./components/views/Search";
 import Layout from "./components/Layout";
-import Modal from "./components/Modal";
+
 
 const router = createBrowserRouter([
   {
@@ -30,7 +29,7 @@ const router = createBrowserRouter([
       },
       {
         path: "pelicula/:id",
-        element: <SingleMovieView/>, //view
+        element: <SingleMovieModal/>, //view
       },
       
       {
@@ -41,6 +40,7 @@ const router = createBrowserRouter([
         path: "contactenos",
         element: <Navigate replace to="/contacto" />, // Navigate , me lleva a Contacto
       },
+      
     ],
   },
   {

@@ -16,18 +16,138 @@ import { SiMysql, SiRedux, SiInsomnia } from "react-icons/si";
 function About() {
   return (
     <>
+      <nav className="p-3 position-relative" style={{ zIndex: 2 }}>
+        <div className="container-fluid d-block">
+          <span className="hover">
+            <NavLink
+              to="/"
+              className={({ isActive }) =>
+                isActive
+                  ? "text textColor fs-5 btn me-2"
+                  : "inactiveNavbarButton btn me-2"
+              }
+            >
+              <p>Home</p>
+            </NavLink>
+          </span>
+
+          <span className="hover">
+            <NavLink
+              to="/about-us"
+              className={({ isActive }) =>
+                isActive
+                  ? "text textColor fs-5 btn me-2"
+                  : "inactiveNavbarButton btn me-2"
+              }
+            >
+              <p>About me</p>
+            </NavLink>
+          </span>
+
+          <span className="hover">
+            <NavLink
+              to="/search"
+              className={({ isActive }) =>
+                isActive
+                  ? "text textColor fs-5 btn me-2"
+                  : "inactiveNavbarButton btn me-2"
+              }
+            >
+              <p>Search</p>
+            </NavLink>
+          </span>
+        </div>
+      </nav>
       <div class="container mx-5">
         <div class="row">
           <div class="col-md-7 AboutSubDiv1 pe-5 paragraphAbout">
             <div className="paragraphAbout">
+              <div
+                class="modal fade"
+                id="staticBackdrop"
+                data-bs-backdrop="static"
+                data-bs-keyboard="false"
+                tabindex="-1"
+                aria-labelledby="staticBackdropLabel"
+                aria-hidden="true"
+              >
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h1 class="modal-title fs-5" id="staticBackdropLabel">
+                        Modal title
+                      </h1>
+                      <button
+                        type="button"
+                        class="btn-close"
+                        data-bs-dismiss="modal"
+                        aria-label="Close"
+                      ></button>
+                    </div>
+                    <div class="modal-body">...</div>
+                    <div class="modal-footer">
+                      <button
+                        type="button"
+                        class="btn btn-secondary"
+                        data-bs-dismiss="modal"
+                      >
+                        Close
+                      </button>
+                      <button type="button" class="btn btn-primary">
+                        Understood
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
               <p>
-                In my journey of professional transformation from{" "}
-                <span className="bold-text">Agricultural Engineer</span> to{" "}
-                <span className="bold-text">Fullstack Developer</span>, I
-                created <span className="bold-text">Fakeflix</span>. This
-                platform lets you effortlessly find your favorite movies—browse
-                our extensive movie list, use the search bar, or filter by
-                ratings to discover the best films.
+                This practice project that emulates a movie streaming platform
+                uses{" "}
+                <span style={{ color: "#FF4500", fontWeight: "bold" }}>
+                  React
+                </span>{" "}
+                as the foundation and{" "}
+                <span style={{ color: "#FF4500", fontWeight: "bold" }}>
+                  NodeJs
+                </span>{" "}
+                as the environment. The application utilizes{" "}
+                <span style={{ color: "#FF4500", fontWeight: "bold" }}>
+                  Redux
+                </span>{" "}
+                for global state management, allowing for smooth data handling
+                across components. Asynchronous{" "}
+                <span style={{ color: "#FF4500", fontWeight: "bold" }}>
+                  API
+                </span>{" "}
+                calls were integrated using
+                <span style={{ color: "#FF4500", fontWeight: "bold" }}>
+                  {" "}
+                  Axios
+                </span>
+                , enabling the retrieval of up-to-date information about movies
+                and series. To enhance the user experience, I implemented an
+                infinite scroll system and a rating filter, allowing users to
+                refine their searches. Regarding design and user interface,{" "}
+                <span style={{ color: "#FF4500", fontWeight: "bold" }}>
+                  CSS{" "}
+                </span>
+                libraries such as{" "}
+                <span style={{ color: "#FF4500", fontWeight: "bold" }}>
+                  React-bootstrap
+                </span>{" "}
+                and{" "}
+                <span style={{ color: "#FF4500", fontWeight: "bold" }}>
+                  React-icons
+                </span>{" "}
+                were used to create an attractive and responsive visual
+                experience. This project not only demonstrates my ability to
+                work with advanced front-end technologies but also my skill in
+                integrating different libraries and{" "}
+                <span style={{ color: "#FF4500", fontWeight: "bold" }}>
+                  APIs
+                </span>
+                .
               </p>
             </div>
             <div className="snap-section d-flex justify-content-center align-items-center about-lg-padding pb-5">

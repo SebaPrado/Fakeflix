@@ -12,6 +12,7 @@ import {
 } from "react-icons/fa";
 import { IoLogoJavascript } from "react-icons/io5";
 import { SiMysql, SiRedux, SiInsomnia } from "react-icons/si";
+import avatarSrc from '/Avatar-man.png';
 
 function About() {
   return (
@@ -215,7 +216,7 @@ function About() {
           </div>
           <div class="col-md-5 About-AvatarSubDiv">
             <div className="manAvatar ">
-              <img src="/Avatar-man.png" alt="Avatar-man" />
+              <img src={avatarSrc} alt="Avatar-man" />
             </div>
           </div>
         </div>

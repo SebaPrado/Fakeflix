@@ -216,7 +216,7 @@ function About() {
           </div>
           <div class="col-md-5 About-AvatarSubDiv">
             <div className="manAvatar ">
-              <img src="/dist/assets/background image netflix-5feb1047.jpg" alt="Avatar-manSeba" />
+              <img src="/background image netflix-5feb1047.jpg" alt="Avatar-manSeba" />
             </div>
           </div>
         </div>

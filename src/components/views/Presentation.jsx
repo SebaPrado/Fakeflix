@@ -67,7 +67,7 @@ function Presentation() {
             zIndex: -1,
           }}
         >
-          <source src="/video.mp4" type="video/mp4" />
+          <source src="/assets/video.mp4" type="video/mp4" />
           Su navegador no soporta el elemento de video.
         </video>
         <div className="video-gradient"></div>

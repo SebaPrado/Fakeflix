@@ -5,12 +5,12 @@
   "type": "module",
   "scripts": {
   "dev": "vite",
-  "build": "npx vite build",
+  "build": "vite build",
   "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
   "preview": "vite preview"
 },
 "engines": {
-     "npm": ">=14.0.0"
+     "node": ">=14.0.0"
    },
 
   "dependencies": {

@@ -27,7 +27,7 @@ function About() {
     { icon: FaGitAlt, name: "Git" },
     { icon: FaGithub, name: "Github" },
     { icon: SiInsomnia, name: "Insomnia" },
-    { icon: FaFigma, name: "Figma" }
+    { icon: FaFigma, name: "Figma" },
   ];
 
   return (
@@ -49,19 +49,6 @@ function About() {
 
           <span className="hover">
             <NavLink
-              to="/about-us"
-              className={({ isActive }) =>
-                isActive
-                  ? "text textColor fs-5 btn me-2"
-                  : "inactiveNavbarButton btn me-2"
-              }
-            >
-              <p>About</p>
-            </NavLink>
-          </span>
-
-          <span className="hover">
-            <NavLink
               to="/search"
               className={({ isActive }) =>
                 isActive
@@ -70,6 +57,18 @@ function About() {
               }
             >
               <p>Search</p>
+            </NavLink>
+          </span>
+          <span className="hover">
+            <NavLink
+              to="/about-us"
+              className={({ isActive }) =>
+                isActive
+                  ? "text textColor fs-5 btn me-2"
+                  : "inactiveNavbarButton btn me-2"
+              }
+            >
+              <p>About</p>
             </NavLink>
           </span>
         </div>
@@ -174,14 +173,22 @@ function About() {
           </div>
           <div class="col-md-5 About-AvatarSubDiv">
             <div className="manAvatar ">
-              <img className="manAvatar" src='https://www.startpage.com/av/proxy-image?piurl=https%3A%2F%2Fimg.freepik.com%2Ffoto-gratis%2Fexperiencia-programacion-persona-que-trabaja-codigos-computadora_23-2150010125.jpg%3Fsize%3D626%26ext%3Djpg%26ga%3DGA1.1.2008272138.1724371200%26semt%3Dais_hybrid&sp=1724479645Tfa2491eee21f6b795bbdebc5076b690368e121f93317e5730d9be0e1581ffffb' alt="Avatar-manSeba" />
+              <img
+                className="manAvatar"
+                src="https://www.startpage.com/av/proxy-image?piurl=https%3A%2F%2Fimg.freepik.com%2Ffoto-gratis%2Fexperiencia-programacion-persona-que-trabaja-codigos-computadora_23-2150010125.jpg%3Fsize%3D626%26ext%3Djpg%26ga%3DGA1.1.2008272138.1724371200%26semt%3Dais_hybrid&sp=1724479645Tfa2491eee21f6b795bbdebc5076b690368e121f93317e5730d9be0e1581ffffb"
+                alt="Avatar-manSeba"
+              />
             </div>
           </div>
           <div className="tech-slider-container mt-4">
             <div className="tech-slider">
               {[...techIcons, ...techIcons].map((tech, index) => (
                 <div className="tech-slide" key={index}>
-                  <tech.icon className={`icons ${tech.name.toLowerCase()}`} size="2rem" color="white" />
+                  <tech.icon
+                    className={`icons ${tech.name.toLowerCase()}`}
+                    size="2rem"
+                    color="white"
+                  />
                   <h5 className="mt-2 text-white">{tech.name}</h5>
                 </div>
               ))}
@@ -189,9 +196,7 @@ function About() {
           </div>
         </div>
       </div>
-      <div className="AboutSubDiv2 mb-5">
-        
-      </div>
+      <div className="AboutSubDiv2 mb-5"></div>
     </>
   );
 }

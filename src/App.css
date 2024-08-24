@@ -338,3 +338,44 @@ body::before {
 .modalBackgroundcolor {
   background-color: #fffffff1;
 }
+
+.tech-carousel .carousel-control-prev,
+.tech-carousel .carousel-control-next {
+  width: 1%;
+}
+
+.tech-carousel .carousel-inner {
+  padding: 1rem 0;
+}
+
+.tech-slider-container {
+  overflow: hidden;
+  width: 100%;
+  background-color: transparent /* Ajusta según tu diseño */
+}
+
+.tech-slider {
+  display: flex;
+  animation: slide 60s linear infinite;
+}
+
+.tech-slide {
+  flex: 0 0 auto;
+  width: 120px; /* Ajusta según el tamaño que desees */
+  text-align: center;
+  padding: 20px;
+}
+
+@keyframes slide {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+/* Para hacer que el desplazamiento sea más suave */
+.tech-slider:hover {
+  animation-play-state: paused;
+}

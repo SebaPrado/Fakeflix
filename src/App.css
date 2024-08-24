@@ -1,7 +1,7 @@
 body {
   /* background-image: url(/background\ image\ netflix.jpg); */
   background-image: url("/background image netflix.jpg");
-  
+
   background-repeat: repeat;
   background-size: cover;
   background-position: center;
@@ -25,7 +25,7 @@ body::before {
 /* ==========================      font family from google font      =============================  */
 .anton-regular {
   font-family: "Anton", sans-serif;
-  font-weight: 250 ;
+  font-weight: 250;
   font-style: normal;
 }
 
@@ -58,18 +58,14 @@ body::before {
   border-radius: 8%;
 }
 
-
 @media (max-width: 670px) {
   .cebolla img {
     max-width: 80%;
-
-    
   }
 }
-.cebolla{
+.cebolla {
   justify-content: center;
 }
-
 
 .imageOfMovieComponent:hover {
   border: #f7d9d9 2px solid;
@@ -161,11 +157,9 @@ body::before {
   line-height: 2.1;
   font-weight: 300 !important;
   font-family: Arial, sans-serif !important; /* Cambia la fuente si es necesario */
-  
 }
 
 .bold-text {
-  
   padding: 4px;
   letter-spacing: 1.8px;
   color: #ffffff;
@@ -249,8 +243,7 @@ body::before {
   display: inline-block;
   color: rgba(250, 248, 248, 0.961);
   max-width: 40%;
-  font-size:smaller;
-
+  font-size: smaller;
 }
 
 .dos {
@@ -327,18 +320,20 @@ body::before {
 .presentation-video {
   width: 100%;
   position: absolute;
-  /* top: -3rem; */
+  top: 0;
   left: 0;
   z-index: 1;
-  /* height: calc(130vh - 22rem);  */
+  height: "98vh";
   object-fit: cover;
   opacity: 0.2;
-  mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 1) 70%, rgba(0, 0, 0, 0) 100%);
-
+  mask-image: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(0, 0, 0, 1) 70%,
+    rgba(0, 0, 0, 0) 100%
+  );
 }
-  
-   
-  .modalBackgroundcolor{
-    background-color: #fffffff1;
-  }
-  
+
+.modalBackgroundcolor {
+  background-color: #fffffff1;
+}

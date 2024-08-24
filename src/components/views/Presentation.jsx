@@ -8,7 +8,6 @@ function Presentation() {
       style={{ position: "relative", zIndex: 0 }}
     >
       <nav className="p-3 position-relative" style={{ zIndex: 2 }}>
-        
         <div className="container-fluid d-block">
           <span className="hover">
             <NavLink
@@ -52,21 +51,7 @@ function Presentation() {
       </nav>
 
       <div className="video-overlay">
-        <video
-          autoPlay
-          muted
-          loop
-          className="presentation-video"
-          style={{
-            position: "absolute",
-            top: 0,
-            left: 0,
-            width: "100%",
-            height: "98vh",
-            objectFit: "cover",
-            zIndex: -1,
-          }}
-        >
+        <video autoPlay muted loop className="presentation-video">
           <source src="/video.mp4" type="video/mp4" />
           Su navegador no soporta el elemento de video.
         </video>
@@ -89,4 +74,3 @@ function Presentation() {
 }
 
 export default Presentation;
-
